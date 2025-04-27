@@ -6,8 +6,16 @@ on:
     branches:
       - main # Or your default branch name
 
+  workflow_dispatch:
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 permissions:
   contents: write  # Allow the workflow to write contents
+  pages: write
+  id-token: write
 
 jobs:
   build_and_deploy:
@@ -19,7 +27,7 @@ jobs:
       - name: Setup Ruby ✨
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1.4'  # Match your local version!
+          ruby-version: '3.1'  # Match your local version!
           bundler-cache: true # Runs 'bundle install' & caches gems
 
       - name: Build Jekyll site 🏗️
