@@ -1,0 +1,1 @@
+window.TEXT_SEARCH_DATA={'posts':[{'title':"Домен \"Балалай/ка\"",'url':"/ka/2025/04/25/ICLR-balalaika.html"},{'title':"Как добавлять и вносить правки",'url':"/ka/2025/04/27/ICLR-website-launch.html"}]};

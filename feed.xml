@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://balal.ai/ka/feed.xml" rel="self" type="application/atom+xml" /><link href="https://balal.ai/ka/" rel="alternate" type="text/html" /><updated>2025-04-27T13:54:58+00:00</updated><id>https://balal.ai/ka/feed.xml</id><title type="html">БалалAI/ka - обучение признакам без учителей AI</title><subtitle>Надгосударственное, аполитичное и совместно изменяемое web-пространство для самоорганизации.</subtitle><entry><title type="html">Как добавлять и вносить правки</title><link href="https://balal.ai/ka/2025/04/27/ICLR-website-launch.html" rel="alternate" type="text/html" title="Как добавлять и вносить правки" /><published>2025-04-27T00:00:00+00:00</published><updated>2025-04-27T00:00:00+00:00</updated><id>https://balal.ai/ka/2025/04/27/ICLR-website-launch</id><content type="html" xml:base="https://balal.ai/ka/2025/04/27/ICLR-website-launch.html"><![CDATA[<h2 id="как-добавлять-заметки-и-вносить-правки">Как добавлять заметки и вносить правки</h2>
+
+<p>Главное помнить: исходники в <code class="language-plaintext highlighter-rouge">Markdown</code> и наш сайт автоматически подцепляет и <!--more--> форматирует их за счёт <a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll">Jekyll</a>.</p>
+
+<p>Для того чтобы править, например, эту страницу, попробуйте найти небольшую пиктограмму “Edit on Github” рядом с заголовком, и перейти на исходный код в репозитории.</p>
+
+<p class="warning">Внимание, следующий по странице объект - не рекурсия, а фото экрана этой же страницы.</p>
+
+<p><img src="/ka/posts_images/2025-04-27_01.png" alt="1" width="500" /></p>
+
+<p>Редактирование осуществляется c помошью отправки Merge запроса, см. инструкции для генератора <a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll">Jekyll</a>.</p>
+
+<h3 id="тема-оформления">Тема оформления</h3>
+
+<p>Сайт работает на <code class="language-plaintext highlighter-rouge">dark</code> теме <a href="https://kitian616.github.io/jekyll-TeXt-theme/docs/en/writing-posts">TeXt-theme</a>. Много что в ней изменяемо, шлите предложения.</p>
+
+<h2 id="конвенции">Конвенции</h2>
+
+<h3 id="записи">Записи</h3>
+
+<p>Файлы должны иметь вид <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-lower-train-case.md</code>, это требуется для чтения даты при генерировании.</p>
+
+<p>Читайте более подробно в <a href="https://kitian616.github.io/jekyll-TeXt-theme/docs/en/writing-posts">Writing Posts</a> и в <a href="https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll">adding content</a>.</p>
+
+<h3 id="файлы-например-картинки">Файлы (например картинки)</h3>
+
+<ul>
+  <li>Используйте <a href="https://pixlr.com/editor/">Pixlr</a> или любой другой онлайн-редактор для коррекций больших размеров изображений</li>
+  <li>Используйте <a href="https://tinypng.com/">TinyPng</a> или любой другой компрессор для улучшения степени сжатия файлов</li>
+  <li>Файлы должны храниться в папке <code class="language-plaintext highlighter-rouge">src/posts_images</code> и иметь вид <code class="language-plaintext highlighter-rouge">YYYY-MM-DD_snake_case.ext</code></li>
+  <li>В Markdown должны иметь <a href="https://mademistakes.com/mastering-jekyll/site-url-baseurl/">site.baseurl</a> в адресе, перед <code class="language-plaintext highlighter-rouge">/posts_images/</code>, например:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![Иллюстрация №1]({{ site.baseurl }}/posts_images/2025-04-27_01.png){: width="500" }
+</code></pre></div></div>
+
+<ul>
+  <li>Да, Jekyll поддерживает аттрибуты СSS для изображений, наподобие <code class="language-plaintext highlighter-rouge">{: width="500" }</code> в примере выше</li>
+</ul>
+
+<h3 id="уточнение">Уточнение</h3>
+
+<p>На самом деле без разницы <code class="language-plaintext highlighter-rouge">snake_case</code> или <code class="language-plaintext highlighter-rouge">Train-case</code> главное сохраняйте <code class="language-plaintext highlighter-rouge">YYYY-MM-DD</code> в начале файлов.</p>
+
+<h2 id="локальная-копия">Локальная копия</h2>
+
+<p>Для правок и новых страниц можно склонировать весь репозиторий и затем править его локально, на порту 4000, используя <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> как разъясняется в <a href="https://kitian616.github.io/jekyll-TeXt-theme/docs/en/quick-start">примере quick start</a></p>
+
+<p class="warning">Вам не требуется локальная копия чтобы создавать новые заметки или вносить правки</p>
+
+<p>Это не самый элегантный но наиболее простой на данный момент способ всем вносить правки.</p>
+
+<p>Отправляйте PR-ы.</p>
+
+<p>Новые страницы можно добавлять по образу и подобию в <code class="language-plaintext highlighter-rouge">src/_posts/</code>.</p>]]></content><author><name></name></author><category term="FAQ" /><summary type="html"><![CDATA[Как добавлять заметки и вносить правки]]></summary></entry><entry><title type="html">Домен “Балалай/ка”</title><link href="https://balal.ai/ka/2025/04/25/ICLR-balalaika.html" rel="alternate" type="text/html" title="Домен “Балалай/ка”" /><published>2025-04-25T00:00:00+00:00</published><updated>2025-04-25T00:00:00+00:00</updated><id>https://balal.ai/ka/2025/04/25/ICLR-balalaika</id><content type="html" xml:base="https://balal.ai/ka/2025/04/25/ICLR-balalaika.html"><![CDATA[<h1 id="история">История</h1>
+
+<p>В Телеграм-чате посвящённом <a href="https://iclr.cc/virtual/2025/papers.html?filter=titles">ICLR 2025</a>, в котором присутствовали 335 человек, прозвучал <!--more--> недвузначный вопрос о том, как русскоязычное сообщество планирует собраться:</p>
+
+<p><img src="/ka/posts_images/2025-04-25_01.png" alt="1" /></p>
+
+<p class="info">Сообщения из чата свидетельствуют об активном использовании каскадных диффузионных моделей с глубоким пониманием текста.</p>
+
+<h2 id="продолжение">Продолжение</h2>
+
+<p>Быстро последовали ответы:</p>
+
+<p><img src="/ka/posts_images/2025-04-25_02.png" alt="3" /></p>
+
+<p><img src="/ka/posts_images/2025-04-25_03.jpeg" alt="3" /></p>
+
+<h2 id="колоквиум-и-первые-деньги">Колоквиум и первые деньги</h2>
+
+<p>После непродолжительного коллоквиума был сформирован денежный взнос с 5 добровольцев на который был приобретён домен и зарегистрирован данный проект.</p>
+
+<h1 id="о-добровольцах">О добровольцах</h1>
+
+<p>Добровольцы были добавлены как первоначальные участники репозитария на GitHub а также в устанавливающих учётных записях.</p>
+
+<p class="info">Главное - последствия действий, а не участие.</p>
+
+<ul>
+  <li><a href="mailto:balalaika.main@gmail.com">balalaika.main@gmail.com</a> - основной адрес приёма сообщений электронной почты</li>
+  <li><a href="mailto:balalaika-main@googlegroups.com">balalaika-main@googlegroups.com</a> - рассылка принятых  на основной адрес электронной почты сообщений</li>
+</ul>]]></content><author><name></name></author><category term="ICLR" /><summary type="html"><![CDATA[История]]></summary></entry></feed>
