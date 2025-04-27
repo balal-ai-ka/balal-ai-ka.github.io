@@ -1,0 +1,85 @@
+# Site settings
+title: БалалAI/ka - обучение признакам без учителей AI 
+email: balalaika.main@gmail.com
+description: >-
+   Надгосударственное, аполитичное и совместно изменяемое web-пространство для самоорганизации.
+url: "https://balal.ai" #
+baseurl: "/ka" # The subpath of your site
+
+theme: jekyll-text-theme # Theme
+text_skin: dark # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
+
+source: src
+destination: ./_site # Standard local build output, GitHub Pages ignores this for serving
+
+google_analytics: G-QJZ72VPCP4 # request access from balalaika.main@gmail.com to https://analytics.google.com/analytics/web/provision/?pli=1#/p487036726/
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM # Use GitHub Flavored Markdown
+  hard_wrap: false
+
+## => GitHub Repository (if the site is hosted by GitHub)
+##############################
+repository: balal-ai-ka/balal-ai-ka.github.io
+repository_tree: main/src
+
+## => Paths
+##############################
+paths:
+  root    : # title link url, "/" (default)
+  home    : # home layout url, "/" (default)
+  archive : # "/archive.html" (default)
+
+## TOC
+toc:
+  selectors: "h1,h2,h3"
+
+## => Paginate
+##############################
+paginate: 8
+paginate_path: /page:num # don't change this unless for special need
+
+# Exclude from processing.
+
+exclude:
+  - CHANGELOG.md
+  - HOW_TO_RELEASE.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README-*.md
+  - README.md
+  - gulpfile.js
+  - jekyll-text-theme.gemspec
+  - package-lock.json
+  - package.json
+  - /docs
+  - /node_modules
+  - /screenshots
+  - /test
+  - /vendor
+
+defaults:
+- scope:
+    path: ""
+    type: posts
+  values:
+    layout: article
+    sharing: true
+    license: true
+    aside:
+      toc: true
+    show_edit_on_github: true
+    show_subscribe: true
+    pageview: true
+
+
+## => Plugins
+##############################
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji
