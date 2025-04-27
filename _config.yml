@@ -6,7 +6,10 @@ description: >-
 url: "https://balal.ai" #
 baseurl: "/ka" # The subpath of your site
 
-theme: jekyll-text-theme # Theme
+## => Theme
+##############################
+#theme: jekyll-text-theme # Use this line if developing local, and comment next line
+remote_theme: kitian616/jekyll-TeXt-theme # Only for GitHub Pages deployment, comment for local
 text_skin: dark # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 
 source: src
