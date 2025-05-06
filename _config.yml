@@ -14,7 +14,7 @@ text_skin: dark # "default" (default), "dark", "forest", "ocean", "chocolate", "
 source: src
 destination: ./_site # Standard local build output, GitHub Pages ignores this for serving
 
-# Below config is overwritten with _includes/analytics-providers/custom.html , feel free to remove it
+# Below config is overwritten with _includes/head/custom.html , feel free to remove it
 # Request access from balalaika.main@gmail.com to https://analytics.google.com/analytics/web/provision/?pli=1#/p487036726/
 analytics:
   google:
