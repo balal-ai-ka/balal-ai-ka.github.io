@@ -2,6 +2,7 @@
 layout: article
 title: Ресурсы
 key: page-resources
+show_edit_on_github: true
 ---
 
 Если вы хотите добавить ресурс, шлите [правку]({{ site.baseurl }}/2025/04/27/how-to-edit-content.html) в Markdown или  [просьбу](https://github.com/balal-ai-ka/balal-ai-ka.github.io/issues/new) в репозиторий.

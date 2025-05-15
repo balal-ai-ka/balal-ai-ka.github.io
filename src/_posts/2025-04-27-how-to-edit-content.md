@@ -4,6 +4,7 @@ title: Как добавлять и вносить правки
 tags: FAQ
 aside:
   toc: true
+show_edit_on_github: true
 ---
 
 ## Как добавлять заметки и вносить правки
