@@ -123,6 +123,9 @@ GEM
       safe_yaml (~> 1.0)
       webrick (>= 1.0)
     jekyll-analytics (0.1.14)
+    jekyll-auto-authors (1.0.5)
+      jekyll (>= 3.0.0)
+      jekyll-paginate-v2 (>= 3.0.0)
     jekyll-avatar (0.8.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-coffeescript (1.2.2)
@@ -152,6 +155,8 @@ GEM
     jekyll-optional-front-matter (0.3.2)
       jekyll (>= 3.0, < 5.0)
     jekyll-paginate (1.1.0)
+    jekyll-paginate-v2 (3.0.0)
+      jekyll (>= 3.0, < 5.0)
     jekyll-readme-index (0.3.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-redirect-from (0.16.0)
@@ -287,6 +292,8 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-analytics
+  jekyll-auto-authors
+  jekyll-paginate-v2
   jekyll-text-theme
 
 BUNDLED WITH

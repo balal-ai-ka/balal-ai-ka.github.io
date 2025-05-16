@@ -42,10 +42,43 @@ paths:
 toc:
   selectors: "h1,h2,h3"
 
-## => Paginate
+## => Paginate v2
 ##############################
-paginate: 8
-paginate_path: /page:num # don't change this unless for special need
+pagination: # using jekyll-paginate-v2 as dependency of jekyll-auto-authors
+  enabled: true
+  per_page: 9
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  sort_field: 'date'
+  sort_reverse: true
+
+## => Autopages
+##############################
+autopages:
+
+  # Other autopage configs stay the same
+  enabled: true
+
+  categories:
+    enabled: false
+  tags:
+    enabled: false
+  collections:
+    enabled: false
+
+  # This block is from jekyll-auto-authors plugin
+  authors:
+    enabled: true
+    data: '_data/authors.yml'
+    # Uncomment the line below to force exclude certain author usernames from autopage generation.
+    # exclude: [ "author1", "author2" ]
+    layouts: 
+      - 'author.html' # We'll define this layout in the next step.
+    title: 'Страница автора :author'
+    permalink: '/author/:author/'
+    slugify:
+      mode: 'default' # choose from [raw, default, pretty, ascii or latin]
+      cased: true # if true, the uppercase letters in slug will be converted to lowercase ones.
 
 # Exclude from processing.
 
@@ -85,7 +118,9 @@ defaults:
 ## => Plugins
 ##############################
 plugins:
+  - jekyll-github-metadata
   - jekyll-feed
-  - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+  - jekyll-paginate-v2
+  - jekyll-auto-authors  

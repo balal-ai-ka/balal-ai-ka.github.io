@@ -4,6 +4,7 @@ title: Впечатления практика
 tags: Impressions
 aside:
   toc: true
+author: AlexeyGoldin
 ---
 
 Я приехал от нашей  trading компании не для того чтобы представить статью,

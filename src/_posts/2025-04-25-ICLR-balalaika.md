@@ -7,6 +7,7 @@ aside:
 articles:
   cover_size: sm
 show_edit_on_github: true
+author: ArsenyChernov
 ---
 
 # История
