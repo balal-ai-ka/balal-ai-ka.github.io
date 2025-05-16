@@ -6,17 +6,11 @@
 # Keep sorted A->Z 
 
 AlexeyGoldin:
-  name: 'Алексей Голдин'
+  name: 'Алексей Гольдин'
   bio: 'Биография AlexeyGoldin'
   website: 'http://user1.com'
-  socials:
-    telegram: '@AlexeyGoldin'
-    github: 'Agoldin'
 
 ArsenyChernov:
   name: 'Арсений Чернов'
   bio: 'Биография Арсений Чернов'
   website: 'https://www.linkedin.com/in/arsenychernov/'
-  socials:
-    telegram: '@arsenyspb'
-    github: 'arsenyspb'
