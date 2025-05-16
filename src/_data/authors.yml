@@ -1,6 +1,6 @@
-# IMPORTANT: edit your author credentials in /src/_data/authors.yml ONLY
+# IMPORTANT: ONLY EDIT ONCE in /src/_data/authors.yml 
 # There is a duplicate of canonical file in /_data/authors.yml
-# Until https://github.com/gouravkhunger/jekyll-auto-authors/issues/4 is fixed we must 
+# Until https://github.com/gouravkhunger/jekyll-auto-authors/issues/4 is fixed we will 
 # use workflow /.github/workflows/jekyll.yml to clone it to /_data/authors.yml 
 
 # Keep sorted A->Z 

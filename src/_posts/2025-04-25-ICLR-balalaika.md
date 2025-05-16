@@ -7,7 +7,7 @@ aside:
 articles:
   cover_size: sm
 show_edit_on_github: true
-author: ArsenyChernov
+author: ArsenyChernov # must be in /src/_data/authors.yml to parse
 ---
 
 # История

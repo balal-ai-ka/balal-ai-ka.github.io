@@ -4,7 +4,7 @@ title: Впечатления практика
 tags: Impressions
 aside:
   toc: true
-author: AlexeyGoldin
+author: AlexeyGoldin # must be in /src/_data/authors.yml to parse
 ---
 Автор: Алексей Гольдин, Teza.
 

@@ -5,6 +5,7 @@ tags: FAQ
 aside:
   toc: true
 show_edit_on_github: true
+author: ArsenyChernov # must be in /src/_data/authors.yml to parse
 ---
 
 ## Как добавлять заметки и вносить правки
